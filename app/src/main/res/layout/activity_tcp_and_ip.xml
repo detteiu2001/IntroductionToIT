@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="12dp"
+    tools:context=".TcpAndIpActivity">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:text="TCP / IP" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="プロトコルとは" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="通信において、相手方とあらかじめルールを定める必要がある。そのルールをプロトコルと呼ぶ" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="TCP/IP" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="インターネット上のデファクトスタンダードなプロトコル。4階層で構成されている[1]。TCPもIPも基本的なプロトコルの一部だが、TCP/IPと呼称するときはこれらのプロトコルに関連して決められたプロトコル群を指す。" />
+
+        <Button
+            android:id="@+id/tcpAndIp1"
+            android:text="[1] TCP/IPを構成する4階層"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="トランスポート層のプロトコル" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="TCP" />
+
+        <Button
+            android:id="@+id/tcpAndIp2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TCP" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="UDP" />
+
+        <Button
+            android:id="@+id/tcpAndIp3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="UDP" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="@string/rel" />
+
+        <Button
+            android:id="@+id/packetToTcpAndIp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="パケット" />
+
+        <Button
+            android:id="@+id/packetToTransportLayer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="トランスポート層" />
+    </LinearLayout>
+
+</ScrollView>

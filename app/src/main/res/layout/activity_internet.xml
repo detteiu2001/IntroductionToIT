@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="12dp"
+    tools:context=".internetActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:text="ネットワーク"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="ネットワーク概要" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ネットワークとは人やモノを繋いで情報や資産をお互いに共有し合うことを指す。\nIT業界においては、「コンピューターネットワーク」のことであり、PCやスマートフォンなどのコンピュータ同士がデータの交換をできる仕組みを指す。" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="LANとWAN" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="インターネットには、その範囲と管理する組織の違いにより、「LAN」と「WAN」に分けられる。" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="WAN" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="電気通信事業者(キャリア)が運営・管理を行い、利用者に有償で提供されるネットワーク" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="インターネット" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WANの一種であり、TCP / IP[1]が使用されている。一つの事業者が管理しているわけではなく、多くのISP(インターネットサービスプロバイダー)がそれぞれのネットワークを提供する。データのやり取りはパケットを通して行われる。" />
+        <Button
+            android:id="@+id/internet1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="[1] TCP / IP" />
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="FTTH (Fiber To The Home)" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="電気通信事業者と利用者を光ファイルバーで結ぶ形態。電気信号を使わないため、安定して高速な通信をすることができる。概ね、通信事業者側でインターネットに接続されている。" />
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="LAN" />
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="" />
+    </LinearLayout>
+
+</ScrollView>

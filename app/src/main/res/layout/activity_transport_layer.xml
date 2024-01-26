@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="12dp"
+    tools:context=".TransportLayerActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:text="トランスポート層" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="トランスポート層の役割" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="トランスポート層[1]はインターネット層[1]の上層に位置し、ネットワーク層(インターネット層)とアプリケーション層の仲介を行う。これらの仲介にはポート番号を用いる。" />
+
+        <Button
+            android:id="@+id/transportLayer1"
+            android:text="[1] トランスポート層 / インターネット層"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="クライアント(C) → サーバー(S)の場合\nC.アプリケーション\n↓\nC.トランスポート\n↓\nC.インターネット\n↓\nC.ネットワークインタフェース\n↓\nS.ネットワークインターフェース\n↓\nS.インターネット\n↓\nS.トランスポート(TCPヘッダに含まれたポート番号を使用)\n↓\nS.アプリケーション" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/img_tcp_transport" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="@string/rel" />
+
+
+    </LinearLayout>
+
+</ScrollView>
