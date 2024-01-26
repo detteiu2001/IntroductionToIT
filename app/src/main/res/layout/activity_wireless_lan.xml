@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="12dp"
+    tools:context=".WirelessLanActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:text="無線LAN" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="無線LAN" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LAN[1]のうち、無線で接続されるもの。IEEE802.11によって規格化されている。" />
+
+        <Button
+            android:id="@+id/WirelessLan1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="[1] LAN" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="無線LANの規格" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="無線LANの技術は、IEEE802.11(IEEE: 米国電気電子学会)によって規格が定められている。世間に普及が始まったのは安価な11bが市場に出回り始めた2000年頃からである。最新(要出典)の11axは、高速で低電力が売りである。" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_marginHorizontal="12dp"
+                            android:text="IEEE802.11b" />
+
+                        <TextView
+                            android:layout_marginHorizontal="12dp"
+                            android:text="11Mbps" />
+
+                        <TextView
+                            android:layout_marginHorizontal="12dp"
+                            android:text="2.4GHz" />
+
+                        <TextView
+                            android:layout_marginHorizontal="12dp"
+                            android:text="MIMO: ✕" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_marginHorizontal="12dp"
+                            android:text="IEEE802.11a" />
+
+                        <TextView
+                            android:layout_marginHorizontal="12dp"
+                            android:text="54Mbps" />
+
+                        <TextView
+                            android:layout_marginHorizontal="12dp"
+                            android:text="5GHz" />
+
+                        <TextView
+                            android:layout_marginHorizontal="12dp"
+                            android:text="MIMO: ✕" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_marginHorizontal="12dp"
+                            android:text="IEEE802.11g" />
+
+                        <TextView
+                            android:layout_marginHorizontal="12dp"
+                            android:text="54Mbps" />
+
+                        <TextView
+                            android:layout_marginHorizontal="12dp"
+                            android:text="2.4GHz" />
+
+                        <TextView
+                            android:layout_marginHorizontal="12dp"
+                            android:text="MIMO: ✕" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_marginHorizontal="12dp"
+                            android:text="IEEE802.11n (WiFi4)" />
+
+                        <TextView
+                            android:layout_marginHorizontal="12dp"
+                            android:text="600Mbps" />
+
+                        <TextView
+                            android:layout_marginHorizontal="12dp"
+                            android:text="2.4 / 5GHz" />
+
+                        <TextView
+                            android:layout_marginHorizontal="12dp"
+                            android:text="MIMO: ○" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_marginHorizontal="12dp"
+                            android:text="IEEE802.11ac(WiFi5)" />
+
+                        <TextView
+                            android:layout_marginHorizontal="12dp"
+                            android:text="6.9Gbps" />
+
+                        <TextView
+                            android:layout_marginHorizontal="12dp"
+                            android:text="5GHz" />
+
+                        <TextView
+                            android:layout_marginHorizontal="12dp"
+                            android:text="MIMO: ○" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_marginHorizontal="12dp"
+                            android:text="IEEE802.11ax(WiFi6 / 6E)" />
+
+                        <TextView
+                            android:layout_marginHorizontal="12dp"
+                            android:text="9.6Gbps" />
+
+                        <TextView
+                            android:layout_marginHorizontal="12dp"
+                            android:text="2.4 / 5 / 6GHz" />
+
+                        <TextView
+                            android:layout_marginHorizontal="12dp"
+                            android:text="MIMO: ○" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_marginHorizontal="12dp"
+                            android:text="IEEE802.11be(WiFI7)" />
+
+                        <TextView
+                            android:layout_marginHorizontal="12dp"
+                            android:text="46Gbps" />
+
+                        <TextView
+                            android:layout_marginHorizontal="12dp"
+                            android:text="1 - 7.25GHz" />
+
+                        <TextView
+                            android:layout_marginHorizontal="12dp"
+                            android:text="MIMO: ○" />
+
+                    </TableRow>
+
+                </TableLayout>
+
+            </HorizontalScrollView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="周波数帯と障害物、電波干渉" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="電波は電子波の一種で、電界と磁界が互いに影響しながら伝わっていく波である。一般的に周波数が高いほど多くの情報を伝達できるが、直進性が増し、障害物に弱くなる。ただし、2,4GHzは電子レンジやBluetoothなど、電波干渉となる他の電波が多いので、一派的に5GHzのほうが安定して通信できる" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:layout_height="match_parent"
+                android:layout_width="match_parent">
+
+                <Space
+                    android:layout_marginHorizontal="12dp"/>
+
+                <TextView
+                    android:layout_marginHorizontal="12dp"
+                    android:text="障害物" />
+
+                <TextView
+                    android:layout_marginHorizontal="12dp"
+                    android:text="電波干渉" />
+
+            </TableRow>
+            <TableRow
+                android:layout_height="match_parent"
+                android:layout_width="match_parent">
+
+                <TextView
+                    android:layout_marginHorizontal="12dp"
+                    android:text="2.4GHz" />
+
+                <TextView
+                    android:layout_marginHorizontal="12dp"
+                    android:text="強い" />
+
+                <TextView
+                    android:layout_marginHorizontal="12dp"
+                    android:text="弱い" />
+
+            </TableRow>
+            <TableRow
+                android:layout_height="match_parent"
+                android:layout_width="match_parent">
+
+                <TextView
+                    android:layout_marginHorizontal="12dp"
+                    android:text="5GHz" />
+
+                <TextView
+                    android:layout_marginHorizontal="12dp"
+                    android:text="弱い" />
+
+                <TextView
+                    android:layout_marginHorizontal="12dp"
+                    android:text="強い" />
+
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="日本では800MHz帯をプラチナバンドと呼ぶ。データ量は少ないがカバーエリアが広い。" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="無線LANの使用モード" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="親機(アクセスポイント)に無数の子機を接続するモードをインフラストラクチャーモードと呼ぶ。大体の無線LANがこのモードで運用されている。アクセスポイントを経由せずに子機同士で直接接続するアドホックモードも存在する。(WiFi Directとはちょっと違う)" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="無線LANの設定" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="SSID" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SSIDはアクセスポイントを区別する識別子。アクセスポイントとクライアントで同じSSIDを設定することで、同じSSIDのみ接続できるようになる。SSIDを表示しないステルス機能も存在する" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="チェンネル(チャネル)" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="アクセスポイント側で設定を行う。通信時には基本的にすべての帯域を使用するわけではなく、チャンネルと呼ばれる複数の帯域に分割して仕様される(2.4GHzでは13-14)。同じチャンネルを使用するアクセスポイントが近くに多いと混戦して速度が落ちる。複数のチャンネルを束ねて帯域を広げるチャンネルボンディングという技術が存在する" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="認証方式と暗号化" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="無線LANでは、暗号化技術を用いてデータの改竄や盗聴を防ぐ。初期にはWEPがあり、WPA。WPA2、WPA3と進化している。新しいものほど安全である" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="MIMO(Multi-Input Multi-Output)"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MIMOは送受信機双方に複数のアンテナを搭載して通信品質を向上させるワイヤレス通信技術。また、MIMOと組み合わせてビームフォーミング(MU-MIMO: Muiti User MIMO)という技術も存在する。これは複数の端末にそれぞれアンテナを向けて電波を集中的に送る技術" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="CSMA/CA(Carrier Sense Multiple Access / Collision Avoidance)" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CSMA/CAとは、無線LANで利⽤されるアクセス制御⽅式。無線LANは回線を共有していないので、フレームの衝突を検出できない。そのため、送信時にアクセスポイント(AP)に送信可能であることを確認し、ランダムな時間待ってから送信する。無線LANの場合、電波の状況によりフレームが届かない可能性がある。そのため、フレームの受診時はACKパケットを送信側に返送する。このパケットを受信することで一つのフレームの送信が完了となる" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_marginHorizontal="12dp"
+                        android:text="CS" />
+
+                    <TextView
+                        android:layout_marginHorizontal="12dp"
+                        android:text="キャリア検知" />
+
+                    <TextView
+                        android:layout_marginHorizontal="12dp"
+                        android:text="フレームの送信前に他の機器が送信中か確認、終了まで待機" />
+
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_marginHorizontal="12dp"
+                        android:text="MA" />
+
+                    <TextView
+                        android:layout_marginHorizontal="12dp"
+                        android:text="多重アクセス" />
+                    <TextView
+                        android:layout_marginHorizontal="12dp"
+                        android:text="複数の機器が一つのアクセスポイント(AP)に接続されている" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_marginHorizontal="12dp"
+                        android:text="CA" />
+
+                    <TextView
+                        android:layout_marginHorizontal="12dp"
+                        android:text="衝突回避"/>
+                    <TextView
+                        android:layout_marginHorizontal="12dp"
+                        android:text="他の機器とのフレーム送信の衝突を回避する" />
+
+                </TableRow>
+
+            </TableLayout>
+
+        </HorizontalScrollView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="@string/rel" />
+
+        <Button
+            android:id="@+id/WirelessLanToEthernet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="無線LAN" />
+
+    </LinearLayout>
+
+</ScrollView>

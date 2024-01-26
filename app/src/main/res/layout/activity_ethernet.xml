@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="12dp"
+    tools:context=".EthernetActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:text="イーサネット" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="イーサネット(Ethernet)" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="家庭・企業などで使⽤されるコンピューターネットワークにおいて、LAN[1]やWAN[1]を構成する有線LANの主流な通信規格" />
+
+        <Button
+            android:id="@+id/ethernet1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="[1] WAN / LAN" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="CSMA/CD(Carrier Sense Multiple Access / Collision Detection)" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CSMA/CDとは、イーサネットで利⽤されるアクセス制御⽅式。複数の機器が同時にフレームを送信すると、通信路でデータが衝突(コリジョン)し、他の機器が正しく受信できない状態になる。衝突が起こると、そのフレームは無駄になってしまうため、CSMA/CDという⽅法を⽤いて検知する。" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_marginHorizontal="12dp"
+                        android:text="CS" />
+
+                    <TextView
+                        android:layout_marginHorizontal="12dp"
+                        android:text="キャリア検知" />
+
+                    <TextView
+                        android:layout_marginHorizontal="12dp"
+                        android:text="フレームの送信前に他の機器が送信中か確認、終了まで待機" />
+
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_marginHorizontal="12dp"
+                        android:text="MA" />
+
+                    <TextView
+                        android:layout_marginHorizontal="12dp"
+                        android:text="多重アクセス" />
+                    <TextView
+                        android:layout_marginHorizontal="12dp"
+                        android:text="複数の機器が一つのケーブルに接続されている" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_marginHorizontal="12dp"
+                        android:text="CD" />
+
+                    <TextView
+                        android:layout_marginHorizontal="12dp"
+                        android:text="衝突検出"/>
+                    <TextView
+                        android:layout_marginHorizontal="12dp"
+                        android:text="衝突を検出する。衝突を検出すると送信を中止、ランダムな時間待ってから再送" />
+
+                </TableRow>
+
+            </TableLayout>
+
+        </HorizontalScrollView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="@string/rel" />
+
+        <Button
+            android:id="@+id/EthernetToWirelessLan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="無線LAN" />
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>
