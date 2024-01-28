@@ -70,6 +70,7 @@
         </LinearLayout>
 
             <EditText
+                android:enabled="false"
                 android:id="@+id/ipv4Editor"
                 android:hint="IPv4アドレス(任意)"
                 android:inputType="text"
@@ -117,6 +118,7 @@
             android:layout_height="wrap_content">
 
             <EditText
+                android:enabled="false"
                 android:id="@+id/ipv6FullEditor"
                 android:hint="省略なしipv6"
                 android:inputType="text"
@@ -125,6 +127,7 @@
                 android:layout_height="wrap_content" />
 
             <Button
+                android:enabled="false"
                 android:id="@+id/ipv6FullToShort"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -142,6 +145,7 @@
             android:layout_height="wrap_content">
 
             <EditText
+                android:enabled="false"
                 android:id="@+id/ipv6ShortEditor"
                 android:hint="省略ありipv6"
                 android:inputType="number"
@@ -150,6 +154,7 @@
                 android:layout_height="wrap_content" />
 
             <Button
+                android:enabled="false"
                 android:id="@+id/ipv6ShortToFull"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

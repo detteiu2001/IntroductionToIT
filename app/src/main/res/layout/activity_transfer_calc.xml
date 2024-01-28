@@ -103,6 +103,8 @@
                 android:text="8(" />
 
             <EditText
+                android:inputType="numberDecimal"
+                android:imeOptions="actionNext"
                 android:id="@+id/byteAmountTime"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -240,6 +242,8 @@
                 android:layout_height="wrap_content"
                 android:text="8(" />
             <EditText
+                android:inputType="numberDecimal"
+                android:imeOptions="actionNext"
                 android:id="@+id/byteAmountRate"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

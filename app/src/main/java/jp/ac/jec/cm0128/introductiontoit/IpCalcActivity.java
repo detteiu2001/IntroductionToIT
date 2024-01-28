@@ -10,6 +10,8 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.util.Arrays;
+
 public class IpCalcActivity extends AppCompatActivity {
 
     private static final String TAG = "IpCalcActivity";
@@ -24,7 +26,6 @@ public class IpCalcActivity extends AppCompatActivity {
 
         TextView networkAddress = findViewById(R.id.networkAddressView);
         TextView broadcastAddress = findViewById(R.id.broadcastAddressView);
-        TextView availableHostAmount = findViewById(R.id.availableHostAmountView);
 
         findViewById(R.id.subnetMaskToPrefix).setOnClickListener(v -> {
             String input = subnetEditor.getText().toString();
@@ -44,24 +45,21 @@ public class IpCalcActivity extends AppCompatActivity {
                 }
             }
 
+            Log.i(TAG, "onCreate: " + Arrays.toString(subnetMask));
+
             int prefix = 0;
 
             for (int bit:
                  subnetMask) {
                 for(int div = 0b01111111; true; div /= 2){
-                    if (bit == 0){
-                        break;
-                    }
-
-                    if (bit >= div){
+                    if (bit > div){
+                        Log.i(TAG, "bit: " + bit + ", div: " + div + ", true");
                         prefix++;
                         bit -= div + 1;
-                        Log.i(TAG, "bit: " + bit + ", div: " + div + ", true");
                     } else {
                         Log.i(TAG, "bit: " + bit + ", div: " + div + ", false");
                     }
-
-                    if (div == 0){
+                    if (bit <= 0){
                         break;
                     }
                 }
@@ -69,7 +67,7 @@ public class IpCalcActivity extends AppCompatActivity {
 
             prefixEditor.setText(String.valueOf(prefix));
 
-
+            countAvailableHost();
         });
 
         findViewById(R.id.prefixToSubnetMask).setOnClickListener(v -> {
@@ -87,27 +85,34 @@ public class IpCalcActivity extends AppCompatActivity {
 
             StringBuilder subnetMask = new StringBuilder();
 
-            while(prefix > 0){
+            while(prefix >= 0){
+                Log.i(TAG, "onCreate: "+ subnetMask);
                 if(prefix >= 8){
                     prefix -= 8;
                     subnetMask.append("255.");
                     continue;
                 }
-                if (prefix == 0){
-                    subnetMask.append("0");
-                    break;
-                }
                 for(int i = 0; i < 8; i++){
                     if(prefix > i ){
                         continue;
                     }
-                    subnetMask.append(Math.pow(2, i) - 1);
+                    subnetMask.append(255 - ((int) Math.pow(2, (8 - i)) - 1));
                     break;
                 }
                 break;
             }
 
+            Log.i(TAG, "onCreate: "+ subnetMask);
+
+            while (countChars(subnetMask.toString(), '.') < 3){
+                subnetMask.append(".0");
+            }
+
+            Log.i(TAG, "onCreate: "+ subnetMask);
+
             subnetEditor.setText(subnetMask.toString());
+
+            countAvailableHost();
         });
 
         EditText fullIPv6 = findViewById(R.id.ipv6FullEditor);
@@ -119,7 +124,7 @@ public class IpCalcActivity extends AppCompatActivity {
         context.startActivity(starter);
     }
 
-    public int countChars(String input, char target) {
+    private int countChars(String input, char target) {
         int count = 0;
 
         for (int i = 0; i < input.length(); i++) {
@@ -129,5 +134,11 @@ public class IpCalcActivity extends AppCompatActivity {
         }
 
         return count;
+    }
+
+    private void countAvailableHost(){
+        TextView availableHostAmount = findViewById(R.id.availableHostAmountView);
+        EditText prefixEditor = findViewById(R.id.prefixLengthEditor);
+        availableHostAmount.setText(Math.pow(2, (32 - Integer.parseInt(prefixEditor.getText().toString()))) + "台");
     }
 }
