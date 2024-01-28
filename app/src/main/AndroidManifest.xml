@@ -12,6 +12,12 @@
         android:theme="@style/Theme.IntroductionToIT"
         tools:targetApi="31">
         <activity
+            android:name=".IpCalcActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TransferCalcActivity"
+            android:exported="false" />
+        <activity
             android:name=".WirelessLanActivity"
             android:exported="false" />
         <activity

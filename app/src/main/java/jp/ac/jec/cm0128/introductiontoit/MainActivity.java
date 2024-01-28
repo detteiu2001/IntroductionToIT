@@ -10,5 +10,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        findViewById(R.id.openSpeedCalc).setOnClickListener(v -> TransferCalcActivity.start(this));
+
+        findViewById(R.id.openIpCalc).setOnClickListener(v -> IpCalcActivity.start(this));
     }
 }
